@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WanderNote — Travel Journal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="topbar">
+      <div class="logo">WanderNote</div>
+
+      <nav class="links" aria-label="Main navigation">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Destinations</a>
+        <a class="nav-link" href="#">Travel Tips</a>
+        <a class="nav-link" href="#">About WanderNote</a>
+      </nav>
+    </header>
+
+    <section id="hero" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <img
+          class="hero-img"
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop"
+          alt="Traveler overlooking a mountain valley"
+        />
+
+        <h1 id="page-title" class="headline">Stories from the road</h1>
+        <p class="sub">Notes, photos, and pocket itineraries.</p>
+      </div>
+    </section>
+
+    <main id="content">
+      <section class="left-col" aria-label="Travel stories">
+        <article class="post card">
+          <h2 class="post-title">Kyoto in 48 Hours</h2>
+          <p class="post-meta">May 2025 · Asia · Budget</p>
+          <img
+            class="post-img"
+            src="https://picsum.photos/id/1016/800/500"
+            alt="Mountain landscape representing a Kyoto travel itinerary"
+          />
+          <div class="post-body">
+            <p>Temple hopping, alley ramen, and morning markets.</p>
+          </div>
+        </article>
+
+        <article class="post card">
+          <h2 class="post-title">Lisbon Hill Walk</h2>
+          <p class="post-meta">April 2025 · Europe · Walkable</p>
+          <img
+            class="post-img"
+            src="https://picsum.photos/id/1035/800/500"
+            alt="City and hillside view representing a Lisbon walking route"
+          />
+          <div class="post-body">
+            <p>Tiles, trams, and sunset at Miradouro.</p>
+          </div>
+        </article>
+      </section>
+
+      <aside class="right-col" aria-labelledby="popular-tags-heading">
+        <section class="panel">
+          <h2 id="popular-tags-heading" class="panel-title">Popular Tags</h2>
+          <nav class="tag-list" aria-label="Popular travel tags">
+            <a href="#" class="tag">Street food</a>
+            <a href="#" class="tag">Itineraries</a>
+            <a href="#" class="tag">Budget travel</a>
+          </nav>
+        </section>
+      </aside>
+    </main>
+
+    <footer id="bottombar">
+      <p class="copy">© 2025 WanderNote</p>
+    </footer>
+  </body>
 </html>
